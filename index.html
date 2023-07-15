@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Agro Crop</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 </head>
-
 <body>
+  <div class="navbar">
+    <div class="logo">Agro <span>Crop</span></div>
+    <ul class="navbar-list">
+      <li class="home-tag"><a href="">Home</a></li>
+      <li class="home-tag"> <a href="#Services">Services</a></li>
+      <li class="home-tag"><a href="#About">About</a></li>
+    </ul>
+  </div>
   <div class="main">
-    <div class="navbar">
-      <div class="icon">
-          <h1 class="icon">Agro Crop</h1>
-          <div class="menu">
-            <!-- <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Store</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Policy</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul> -->
-            <div class="Search">
-              <input class="srch" type="Search" name="" placeholder="type To text">
-              <a href="#"> <button class="btn">Search</button></a>
-            </div>
-          </div>
+    <div class="intro">
+     <div class="header">
+      <h1>Welcome to Agro Crop</h1>
+     </div>
+      <div class="introduction">
+        <p> Welcome to Agro Crop, the best seed selling company in country and the region. We sell all kinds of seeds both local and hybrid. We also sell fertilizers and farm implements at best and affordable prices.Welcome all!</p>
+        <button id="btn">Add seed</button>
       </div>
     </div>
+    <div class="profile">
+      <div class="profile-content">
+        <img id="profile-img" src="./images/home.jpg" alt="Image of a young farmer">
+      </div>
+    
+    </div>
   </div>
+  <section id="Services">
+    <div>
+      <ul id="menu">
+      </ul>
+    </div>
+    <div class="model" id="modelEditor">
+
+     <div class="animal">
+      <h4>Add a new crop</h4>
+      <button id="cls">close</button>
+     </div>
+      <form id="dtv">
+      <input type="text" name="title" id="title" placeholder="Enter the crop name">
+      <input type="text" name="photo" id="photo" placeholder="Enter URL of the crop">
+     <textarea name="description" id="description" cols="30" rows="10"></textarea>
+     <button id="sbt" type="submit">Submit</button>
+    </form>
+      
+    </div>
+  </section>
+
+  <section id="About">
+    <p>About Us</p>  
+  </section>
+<footer class="foot">
+  <p><em >© 2021-2023 Agro Crop LTD. All rights reserved.</em></p>
+</footer>
 </body>
 </html>
